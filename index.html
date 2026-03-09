@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Maa | 10 March</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="introScreen" class="intro-screen">
+      <div class="intro-content">
+        <p class="intro-small">10 March</p>
+        <h1>Happy Birthday Maa</h1>
+        <p class="intro-text">
+          meri duniya ki sabse khoobsurat, sabse caring, sabse strongest aurat
+          ke naam
+        </p>
+        <button id="enterSiteBtn" class="btn primary">Enter</button>
+      </div>
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="loader-inner">
+        <div class="loader-ring"></div>
+        <h2>Happy Birthday Maa</h2>
+      </div>
+    </div>
+
+    <div id="petals"></div>
+    <div id="sparkles"></div>
+
+    <audio id="bgMusic" loop>
+      <source src="assets/audio/bgm.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header class="topbar">
+      <div class="logo">Maa</div>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#hero">Home</a>
+        <a href="#letter">Letter</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#timeline">Journey</a>
+        <a href="#media">Message</a>
+        <a href="#surprise">Surprise</a>
+      </nav>
+
+      <div class="top-actions">
+        <button id="musicToggle" class="icon-btn" title="Toggle Music">
+          🎵
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="hero-text reveal">
+          <p class="tag">10 मार्च • My Mother's Birthday</p>
+          <h1>Happy Birthday Maa</h1>
+          <h2>ममता गोयल</h2>
+          <p id="typedLine" class="typed-line"></p>
+
+          <p class="hero-desc">
+            Aap sirf meri maa nahi ho, aap meri poori duniya ho. Jab bhi zindagi
+            ne mujhe andar se toda hai, tab ek hi jagah yaad aayi hai, aapki
+            god, aapki baahon ka sahara, aur woh sukoon jo mujhe duniya ke kisi
+            kone mein nahi mil sakta. Kabhi kabhi itna bojh mehsoos hota hai ki
+            bas mann karta hai sab chhodkar aapke gale lag jaun aur chup chaap
+            ro loon. Aap hi meri dua ho, meri himmat ho, meri rooh ka sukoon ho.
+          </p>
+
+          <div class="countdown-box">
+            <p class="count-title">Birthday Countdown</p>
+            <div class="countdown">
+              <div><span id="days">00</span><small>Days</small></div>
+              <div><span id="hours">00</span><small>Hours</small></div>
+              <div><span id="minutes">00</span><small>Minutes</small></div>
+              <div><span id="seconds">00</span><small>Seconds</small></div>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#letter" class="btn primary">Mera Letter Padho</a>
+            <button id="openSecretBtn" class="btn secondary">
+              Open this, Maa
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-image-card reveal">
+          <img
+            src="assets/images/mom-main.jpeg"
+            alt="Maa Photo"
+            class="zoomable"
+          />
+          <p>
+            Yahan apni maa ki sabse beautiful photo lagani hai. Placeholder se
+            emotions nahi nikalte.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Why She Is Special</p>
+          <h2>Woh kyun sabse alag hain</h2>
+        </div>
+
+        <div class="card-grid six">
+          <div class="info-card reveal">
+            <h3>Strongest Woman</h3>
+            <p>
+              Jitna sehkar bhi muskurana aapne seekha, wahi asli strength hai.
+            </p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Most Caring Heart</h3>
+            <p>
+              Aapka dil thake hue insaan ko bhi ghar jaisa sukoon de sakta hai.
+            </p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Most Beautiful Smile</h3>
+            <p>Aapki smile mere sabse bure din ko bhi halka kar deti hai.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>My First Teacher</h3>
+            <p>
+              Meri pehli seekh, pehla sanskar, pehla confidence sab aapse mila.
+            </p>
+          </div>
+          <div class="info-card reveal">
+            <h3>My Biggest Blessing</h3>
+            <p>Meri life ki sabse badi blessing aap ho, Maa.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>My Forever Home</h3>
+            <p>Duniya chahe jahan le jaaye, mera ghar aap hi rahogi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="letter" class="section">
+        <div class="section-title reveal">
+          <p class="tag">Lakshya's Heart</p>
+          <h2>Meri Maa ke naam mera dil</h2>
+        </div>
+
+        <div class="letter-box reveal">
+          <p>Priya Maa,</p>
+
+          <p>
+            Happy Birthday Maa. Aaj ka din aapka hai, lekin sach kahun to meri
+            poori zindagi hi aapki den hai. Main jo bhi hoon, jitna bhi sambhla
+            hoon, jitni bhi baar tootkar phir khada hua hoon, uske peeche sirf
+            aur sirf aap ho.
+          </p>
+
+          <p>
+            Log kehte hain maa ka pyaar sabse bada hota hai, par maine is baat
+            ko sirf suna nahi, maine ise jeeya hai. Maine dekha hai kaise aapne
+            apne dard chupaye, apni thakan chhupayi, apne aansu rok liye, sirf
+            isliye taki main muskura sakun. Aapne kabhi mujhe mehsoos nahi hone
+            diya ki meri zindagi mein koi kami hai, jabki sach ye hai ki aapne
+            akeli hi do zindagiyan jee di, ek apni aur ek meri.
+          </p>
+
+          <p>
+            Maa, kabhi kabhi main bahar se theek dikhta hoon, hasta bhi hoon,
+            normal bhi lagta hoon, lekin andar se kitni baar toot jata hoon,
+            shayad ye sirf aap samajh sakti ho. Kabhi kabhi dil itna bhar aata
+            hai ki bas mann karta hai ki main aapke paas aaun, aapke gale lag
+            jaun, aur bina kuch kahe bas ro loon. Kyunki duniya sawal karti hai,
+            par aapki baahon mein jawab milta hai. Duniya samjhaane ki koshish
+            karti hai, par aapki god mein sukoon milta hai.
+          </p>
+
+          <p>
+            Aapne mujhe sirf paala nahi, aapne mujhe bachaya hai. Har us pal se
+            bachaya hai jahan main toot sakta tha. Har us andhere se nikala hai
+            jahan main kho sakta tha. Aap meri maa bhi rahi ho aur meri himmat
+            bhi. Aapne mujhe pyaar bhi diya aur sahaara bhi. Aapne mujhe jeena
+            bhi sikhaya aur sehna bhi.
+          </p>
+
+          <p>
+            Aapki khoobsurti sirf aapke chehre mein nahi hai, Maa. Aapki
+            khoobsurti aapke tyag mein hai, aapki aankhon ki thakan mein bhi
+            chhupa hua pyaar mein hai, aapke chup rehkar sab seh lene mein hai,
+            aur us mamta mein hai jo har dafa mujhe bachaa leti hai. Aap duniya
+            ki sabse khoobsurat aurat ho, kyunki aapke dil jaisa dil duniya mein
+            bahut kam hota hai.
+          </p>
+
+          <p>
+            Mujhe aap par garv hai, itna ki shabdon mein pura nahi utar sakta.
+            Agar meri zindagi mein kabhi sukoon likha gaya hai, to woh aap ho.
+            Agar meri zindagi mein kabhi sachcha pyaar mila hai, to woh aap ho.
+            Agar main kabhi kisi ke gale lagkar sach mein apna bojh halka kar
+            sakta hoon, to woh sirf aap ho.
+          </p>
+
+          <p>
+            Maa, main aapse ek baat kehna chahta hoon. Kabhi kabhi main bohot
+            strong banne ki acting karta hoon, lekin andar se main bas aapka
+            baccha hoon, jise ab bhi aapki hug chahiye hoti hai. Ab bhi mann
+            karta hai ki aap sir par haath pher do aur bolo, “sab theek ho
+            jayega.” Shayad poori duniya ka sukoon ek taraf ho, aur aapka gale
+            lagana ek taraf, phir bhi main aapko hi chununga.
+          </p>
+
+          <p>
+            Aaj aapke birthday par main bas itna kehna chahta hoon, thank you
+            Maa. Mere liye jeene ke liye, mere liye ladne ke liye, mere liye
+            tootkar bhi khadi rehne ke liye, aur mujhe itna pyaar dene ke liye
+            ki meri adhuri zindagi bhi poori lagne lagi.
+          </p>
+
+          <p>
+            Main shayad aapki har takleef ka hisaab kabhi nahi chuka paunga,
+            lekin main itna zaroor karunga ki ek din aapko lage, haan, mera beta
+            meri saari mehnat ka sabse khoobsurat jawab hai.
+          </p>
+
+          <p>
+            Happy Birthday Maa. Aap meri taqat ho, meri izzat ho, meri dua ho,
+            mera ghar ho, aur woh hug ho jisme meri saari thakan, saara dard,
+            saari chinta khatam ho jaati hai.
+          </p>
+
+          <p class="sign">Hamesha aapka,<br />Lakshya</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Aap Meri Taaqat Ho</p>
+          <h2>Aap meri ताकत ho</h2>
+        </div>
+
+        <div class="taqat-box reveal">
+          <p>
+            Maa, jab main andar se bikharne lagta hoon na, tab sabse pehle aap
+            yaad aati ho. Jab dil bohot bhar jaata hai, tab mann karta hai bas
+            aapke paas aaun aur aapke gale lagkar thoda sa jee loon. Aap sirf
+            meri taqat nahi ho, aap meri healing ho. Aap woh jagah ho jahan mera
+            dard awaaz ke bina bhi samjha jaata hai.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">One Deep Truth</p>
+          <h2>Maa, mujhe aapki hug chahiye</h2>
+        </div>
+
+        <div class="letter-box reveal small-letter">
+          <p>
+            Kabhi kabhi zindagi itni bhaari lagti hai ki shabdon ka bhi mann
+            nahi karta. Bas mann karta hai ki aap saamne ho, main aapke gale lag
+            jaun, aur bina kuch samjhaye bas ro loon.
+          </p>
+          <p>
+            Pata nahi kyun, lekin aapki baahon mein aaj bhi bachpan jaisa sukoon
+            milta hai. Jaise sab theek ho jayega. Jaise duniya chahe kitni bhi
+            sakht ho, par Maa ka pyaar ab bhi mere liye ek zinda panaah hai.
+          </p>
+          <p>
+            Main bada ho gaya hoon, lekin kuch dard aise hote hain jo insaan ko
+            phir se baccha bana dete hain. Aur un lamhon mein mujhe sirf aap
+            chahiye hoti ho. Sirf aapki god. Sirf aapka haath. Sirf aapki hug.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Beauty of My Mother</p>
+          <h2>Meri Maa ki khoobsurti</h2>
+        </div>
+
+        <div class="card-grid four">
+          <div class="info-card reveal">
+            <h3>Beauty in Strength</h3>
+            <p>Aapki मजबूती hi aapki sabse gehri chamak hai.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Beauty in Patience</h3>
+            <p>Itna sehkar bhi shaant rehna har kisi ke bas ki baat nahi.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Beauty in Heart</h3>
+            <p>Aapka dil jitna saaf hai, utni hi aapki rooh khoobsurat hai.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Beauty in Smile</h3>
+            <p>Aapki smile mein mera ghar basta hai.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Quotes</p>
+          <h2>Kuch baatein jo sirf Maa ke liye banti hain</h2>
+        </div>
+
+        <div class="quote-grid">
+          <div class="quote-card reveal">
+            “Maa ki hug mein woh sukoon hai jo poori duniya nahi de sakti.”
+          </div>
+          <div class="quote-card reveal">
+            “Main strong tab lagta hoon, jab andar se mujhe meri maa sambhal
+            rahi hoti hai.”
+          </div>
+          <div class="quote-card reveal">
+            “Kabhi kabhi insaan ko shabdon nahi, sirf maa ki baahon ki zarurat
+            hoti hai.”
+          </div>
+          <div class="quote-card reveal">
+            “Mere saare dard halka ho jaate hain, jab main Maa ko yaad karta
+            hoon.”
+          </div>
+          <div class="quote-card reveal">
+            “A mother’s love builds a child’s world.”
+          </div>
+          <div class="quote-card reveal">
+            “Strength has a face, and I call it Maa.”
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Memory Slider</p>
+          <h2>Hamari yaadein</h2>
+        </div>
+
+        <div class="rolling-slider reveal">
+          <button class="slider-btn" id="prevSlide">&#10094;</button>
+
+          <div class="slider-viewport">
+            <div class="slider-track" id="sliderTrack">
+              <div class="slide">
+                <img
+                  src="assets/images/family1.jpeg"
+                  class="zoomable"
+                  alt="Family memory 1"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="assets/images/family2.jpeg"
+                  class="zoomable"
+                  alt="Family memory 2"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="assets/images/family3.jpeg"
+                  class="zoomable"
+                  alt="Family memory 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="assets/images/family4.jpeg"
+                  class="zoomable"
+                  alt="Family memory 4"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="assets/images/family5.jpeg"
+                  class="zoomable"
+                  alt="Family memory 5"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="assets/images/family6.jpeg"
+                  class="zoomable"
+                  alt="Family memory 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn" id="nextSlide">&#10095;</button>
+        </div>
+
+        <div class="slider-dots reveal">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+          <button class="dot" data-index="3"></button>
+          <button class="dot" data-index="4"></button>
+          <button class="dot" data-index="5"></button>
+        </div>
+
+        <div class="thumb-row reveal">
+          <img
+            src="assets/images/family1.jpeg"
+            class="thumb zoomable active-thumb"
+            alt="thumb1"
+            data-index="0"
+          />
+          <img
+            src="assets/images/family2.jpeg"
+            class="thumb zoomable"
+            alt="thumb2"
+            data-index="1"
+          />
+          <img
+            src="assets/images/family3.jpeg"
+            class="thumb zoomable"
+            alt="thumb3"
+            data-index="2"
+          />
+          <img
+            src="assets/images/family4.jpeg"
+            class="thumb zoomable"
+            alt="thumb4"
+            data-index="3"
+          />
+          <img
+            src="assets/images/family5.jpeg"
+            class="thumb zoomable"
+            alt="thumb5"
+            data-index="4"
+          />
+          <img
+            src="assets/images/family6.jpeg"
+            class="thumb zoomable"
+            alt="thumb6"
+            data-index="5"
+          />
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-title reveal">
+          <p class="tag">Memory Gallery</p>
+          <h2>Aapke liye likhe mere ehsaas</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item tall reveal">
+            <img src="assets/images/1.jpeg" alt="Poem 1" class="zoomable" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="assets/images/2.jpeg" alt="Poem 2" class="zoomable" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="assets/images/3.jpeg" alt="Poem 3" class="zoomable" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="assets/images/4.jpeg" alt="Poem 4" class="zoomable" />
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-title reveal">
+          <p class="tag">Timeline</p>
+          <h2>Aapke pyaar aur tyag ki journey</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>Mera Bachpan</span>
+            <div>
+              <h3>Aapne sab sambhal liya</h3>
+              <p>
+                Jab main chhota tha, aapne har mushkil ko apne upar le liya taki
+                main safe reh sakun.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span>Mere School Ke Saal</span>
+            <div>
+              <h3>Aap hamesha mere saath khadi rahi</h3>
+              <p>
+                Har kitab, har fee, har chinta, har sapne mein aapki mehnat
+                shamil thi.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span>Mere Mushkil Din</span>
+            <div>
+              <h3>Aapne mujhe tootne nahi diya</h3>
+              <p>
+                Jab main andar se akela tha, tab aapka pyaar mere liye sahara
+                bana.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span>Aaj</span>
+            <div>
+              <h3>Main yahan hoon kyunki aap thi</h3>
+              <p>
+                Meri har achievement mein aapki dua, aapka tyag aur aapka yakeen
+                hai.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Reasons I Love You</p>
+          <h2>Main aapse kyun pyaar karta hoon</h2>
+        </div>
+
+        <div class="reason-grid">
+          <div class="reason reveal">Aapne kabhi haar nahi maani</div>
+          <div class="reason reveal">Aap dard mein bhi muskurayi</div>
+          <div class="reason reveal">Aapne mujhe safe feel karaya</div>
+          <div class="reason reveal">Aapne mujhe himmat di</div>
+          <div class="reason reveal">Aap har tarah se beautiful ho</div>
+          <div class="reason reveal">Aapne mujhe bina shart pyaar diya</div>
+          <div class="reason reveal">Aap meri pehli guru ho</div>
+          <div class="reason reveal">Aap meri sabse badi blessing ho</div>
+          <div class="reason reveal">Aapne kami ko bhi pyaar se bhar diya</div>
+          <div class="reason reveal">Aap meri shanti ho</div>
+          <div class="reason reveal">Aap meri sabse strong diwar ho</div>
+          <div class="reason reveal">Aap meri inspiration ho</div>
+          <div class="reason reveal">Aap meri dua ho</div>
+          <div class="reason reveal">Aap meri healing ho</div>
+          <div class="reason reveal">Aapka hug mera ghar hai</div>
+          <div class="reason reveal">Aap meri poori duniya ho</div>
+        </div>
+      </section>
+
+      <section id="media" class="section media-section">
+        <div class="section-title reveal">
+          <p class="tag">Personal Message</p>
+          <h2>Meri awaaz, mera pyaar</h2>
+        </div>
+
+        <div class="media-grid">
+          <div class="media-card reveal">
+            <h3>Tap to hear my message</h3>
+
+            <button id="playVoiceBtn" class="btn primary">
+              ▶ Play Voice Note
+            </button>
+            <audio id="voiceNote">
+              <source src="assets/audio/voice-note.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+
+          <div class="media-card reveal">
+            <video controls>
+              <source src="assets/video/maa-message.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Wish Wall</p>
+          <h2>Meri chhoti chhoti wishes</h2>
+        </div>
+
+        <div class="wish-wall">
+          <div class="wish reveal">Aap hamesha khush raho</div>
+          <div class="wish reveal">Aapki har dua qubool ho</div>
+          <div class="wish reveal">Aapki aankhon mein sirf sukoon ho</div>
+          <div class="wish reveal">Main hamesha aapka garv banu</div>
+          <div class="wish reveal">Aapki life mein ab sirf roshni ho</div>
+          <div class="wish reveal">Aapko har dard se rahat mile</div>
+          <div class="wish reveal">Aapki smile kabhi kam na ho</div>
+          <div class="wish reveal">
+            Aapko jitna pyaar diya, utna hi wapas mile
+          </div>
+          <div class="wish reveal">
+            Aapki zindagi ka har din halka aur khoobsurat ho
+          </div>
+        </div>
+      </section>
+
+      <section id="surprise" class="section">
+        <div class="section-title reveal">
+          <p class="tag">Hidden Surprise</p>
+          <h2>Ek chhupi hui baat jo sirf aapke liye hai</h2>
+        </div>
+
+        <div class="surprise-box reveal">
+          <p>
+            Kuch baatein main seedha nahi keh pata, isliye yeh surprise rakha
+            hai.
+          </p>
+          <button id="openEnvelopeBtn" class="btn primary">
+            Open this, Maa
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="tag">Birthday Envelope</p>
+          <h2>Ek chhoti si chitti jo dil ke bohot kareeb hai</h2>
+        </div>
+
+        <div class="envelope-scene reveal">
+          <div id="envelope" class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-letter">
+              <div class="envelope-letter-inner">
+                <p>Maa,</p>
+                <p>kabhi kabhi bas aapke gale lagkar rona hota hai.</p>
+                <p>aap meri sabse safe jagah ho.</p>
+                <p>I love you.</p>
+              </div>
+            </div>
+          </div>
+          <button id="openLetterBtn" class="btn secondary">
+            Open Envelope
+          </button>
+        </div>
+      </section>
+
+      <section class="section final-section">
+        <div class="final-card reveal">
+          <p class="tag">Thank You</p>
+          <h2>Happy Birthday Maa</h2>
+          <p>
+            Thank you for being my mother, my strength, my safe place, and my
+            whole world.
+          </p>
+          <p class="final-line">
+            Jab duniya samajh nahi paati, tab aapki hug sab samjha deti hai.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal hidden" id="secretModal">
+      <div class="modal-content">
+        <button class="close-modal" id="closeSecretBtn">&times;</button>
+        <h2>For You, Maa</h2>
+        <p>
+          Maa, ek sach jo main hamesha feel karta hoon, woh ye hai ki main chahe
+          kitna bhi strong ban jaun, andar se main aaj bhi wahi baccha hoon jo
+          aapke gale lagkar sukoon dhoondhta hai.
+        </p>
+        <p>
+          Mujhe aapse sirf pyaar nahi mila, mujhe jeene ki wajah mili. Aur jab
+          bhi zindagi bohot chubhti hai, dil karta hai bas aap mujhe hug kar lo
+          aur ek baar keh do, “main hoon na.”
+        </p>
+        <p>
+          I love you Maa. Main aapko kabhi repay nahi kar sakta, but I will
+          spend my whole life trying to make you proud.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="envelopeModal">
+      <div class="modal-content">
+        <button class="close-modal" id="closeEnvelopeBtn">&times;</button>
+        <h2>My Promise to You</h2>
+        <p>
+          Maa, main wada karta hoon ki ek din aapki har takleef ka jawab meri
+          mehnat aur meri kamyabi hogi.
+        </p>
+        <p>
+          Aapne jo pyaar diya hai, use main kabhi bhool nahi sakta. Main hamesha
+          aapko proud feel karwaunga.
+        </p>
+        <p class="sign">Hamesha aapka,<br />Lakshya</p>
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox hidden">
+      <button id="closeLightbox" class="lightbox-close">&times;</button>
+      <img id="lightboxImage" src="" alt="Preview" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
